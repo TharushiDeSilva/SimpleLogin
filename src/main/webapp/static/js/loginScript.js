@@ -40,22 +40,3 @@ function loginOperation(targetServlet){
      form.submit();
 }
 
-function viewData(targetServlet) {
-    var form = document.createElement("form");
-    form.setAttribute("method", "post");
-    form.setAttribute("action", serverPath + targetServlet + window.location.search);
-
-    var nameField = document.createElement("input");
-    nameField.setAttribute("type", "hidden");
-    nameField.setAttribute("name", "accessType");
-    nameField.setAttribute("value", "granted");
-
-    form.appendChild(nameField);
-    document.body.appendChild(form);
-    form.submit();
-
-}
-
-function changeTimeStamp(){
-
-}
